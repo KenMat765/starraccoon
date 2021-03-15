@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Fighter
+  - EnemyBullet
+  - Enemy
+  - MyBullet
+  - Bullet
+  - SubTarget
+  - Fire
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Fighter
+  - Body1
+  - Bullet1
+  - Body2
+  - Bullet2
+  - Body3
+  - Bullet3
+  - Body4
+  - Bullet4
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - ZakoBody
+  - ZakoBullet
+  - SubTarget
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
