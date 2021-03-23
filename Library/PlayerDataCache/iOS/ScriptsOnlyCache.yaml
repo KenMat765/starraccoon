@@ -6,11 +6,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AIMove
     - AudioandBurner
+    - Bomb
     - Bullet
     - CSManager
     - CameraController
     - EnemyAttack
-    - KariCameraMove
+    - KariCamera
     - MainMenu
     - MyAttack
     - Revive
@@ -20,15 +21,16 @@ ScriptsOnlyBuild:
     - uGUIMannager
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
+    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -88,51 +90,53 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11852}
-    - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11876}
     - Class: 114
       Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 11978}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 11980}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12288}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 13348}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13224}
     - Class: 114
-      Script: {instanceID: 13726}
+      Script: {instanceID: 13374}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13380}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 13382}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 13754}
     - Class: 114
-      Script: {instanceID: 14146}
+      Script: {instanceID: 13782}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 13800}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13910}
     - Class: 114
-      Script: {instanceID: 586440}
+      Script: {instanceID: 14030}
     - Class: 114
-      Script: {instanceID: 586446}
+      Script: {instanceID: 14126}
     - Class: 114
-      Script: {instanceID: 696174}
+      Script: {instanceID: 14180}
+    - Class: 114
+      Script: {instanceID: 14218}
+    - Class: 114
+      Script: {instanceID: 14274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,23 +193,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11852}
-    - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11876}
     - Class: 114
       Script: {instanceID: 11878}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 13726}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 14146}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 766742}
+      Script: {instanceID: 13754}
+    - Class: 114
+      Script: {instanceID: 14180}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,12 +227,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 134322c9293c1896357cce271b819ce4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -285,7 +283,7 @@ ScriptsOnlyBuild:
     className: ParticleSystemMultiplier
   - hash:
       serializedVersion: 2
-      Hash: 1f2ee1c10b01389201f9b4950e94c40e
+      Hash: 70ed83e6978f225964818b0a3294e945
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AIMove
@@ -435,12 +433,6 @@ ScriptsOnlyBuild:
     className: AutoCam
   - hash:
       serializedVersion: 2
-      Hash: 4ce37fe15339e9da62e51398f04b8bc8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: KariCameraMove
-  - hash:
-      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -453,7 +445,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: bcd26aa424d99869de4ebb9453b3d59a
+      Hash: 3e0d398d35631746869f211203c902de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TankMove
@@ -717,6 +709,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 2720a1f7a8e3a71d6d8406d85f84d0a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Revive
+  - hash:
+      serializedVersion: 2
       Hash: 65c9e8f2d0653991d518373cd4240b97
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Aeroplane
@@ -763,6 +761,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: CarController
+  - hash:
+      serializedVersion: 2
+      Hash: 44a3d6bdb64cbfbaf8402b1d606e4310
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KariCamera
   - hash:
       serializedVersion: 2
       Hash: 0334c4a0effc471453cf665c58f76aff
@@ -849,16 +853,28 @@ ScriptsOnlyBuild:
     className: TargetFieldOfView
   - hash:
       serializedVersion: 2
-      Hash: 126950b5e0b0e7ba795fc6b051287bb5
+      Hash: f36a347cb9d9f76073b28cef65825a3b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyAttack
   - hash:
       serializedVersion: 2
-      Hash: 126950b5e0b0e7ba795fc6b051287bb5
+      Hash: f36a347cb9d9f76073b28cef65825a3b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MyAttack
+  - hash:
+      serializedVersion: 2
+      Hash: a9570c1e8264cc047db86084a6c76dcc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bomb
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: f7bb6096199e0cf058d5d69878184cf4
@@ -963,12 +979,6 @@ ScriptsOnlyBuild:
     className: Mudguard
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NewBehaviourScript
-  - hash:
-      serializedVersion: 2
       Hash: c0e061a135ad81adea53b31e6bf68107
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Aeroplane
@@ -1017,6 +1027,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 70ed83e6978f225964818b0a3294e945
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZakoMove
+  - hash:
+      serializedVersion: 2
       Hash: 323ef9904ec6149348cdcc45975c0dbe
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Effects
@@ -1027,6 +1043,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: FollowTarget
+  - hash:
+      serializedVersion: 2
+      Hash: f36a347cb9d9f76073b28cef65825a3b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZakoAttack
   - hash:
       serializedVersion: 2
       Hash: 74fdef42e5d1b91d250d09f9fc6f54da
@@ -1131,10 +1153,16 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: bcb574a366e1f492e8d2965f7c0c28ea
+      Hash: 0a399edee3d17f2d25f0701348b00e13
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: 134322c9293c1896357cce271b819ce4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -1219,32 +1247,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 1f2ee1c10b01389201f9b4950e94c40e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ZakoMove
-  - hash:
-      serializedVersion: 2
-      Hash: 126950b5e0b0e7ba795fc6b051287bb5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ZakoAttack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Revive
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenu
   platform: 9
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/kent3/OneDrive/\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8/StarRaccoon"
+  playerPath: "/Users/kentM/OneDrive/\u30C8\u3099\u30AD\u30E5\u30E1\u30F3\u30C8/Unity/Tank/tank2"

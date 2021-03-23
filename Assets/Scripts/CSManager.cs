@@ -42,27 +42,31 @@ public class CSManager : MonoBehaviour
             }
             foreach(Touch currentTouch in currentTouches)
             {
-                switch(currentTouch.phase)
+                int Id = Array.IndexOf(currentTouches, currentTouch);
+                if (Id >= 0)
                 {
-                    case TouchPhase.Began:
-                    startPoses[Array.IndexOf(currentTouches, currentTouch)] = currentTouch.position;
-                    currentPoses[Array.IndexOf(currentTouches, currentTouch)] = currentTouch.position;
-                    break;
+                    switch (currentTouch.phase)
+                    {
+                        case TouchPhase.Began:
+                            startPoses[Id] = currentTouch.position;
+                            currentPoses[Id] = currentTouch.position;
+                            break;
 
-                    case TouchPhase.Moved:
-                    currentPoses[Array.IndexOf(currentTouches, currentTouch)] = currentTouch.position;
-                    swipeSpeeds[Array.IndexOf(currentTouches, currentTouch)] = currentTouch.deltaPosition.magnitude/currentTouch.deltaTime;
-                    break;
+                        case TouchPhase.Moved:
+                            currentPoses[Id] = currentTouch.position;
+                            swipeSpeeds[Id] = currentTouch.deltaPosition.magnitude / currentTouch.deltaTime;
+                            break;
 
-                    case TouchPhase.Stationary:
-                    swipeSpeeds[Array.IndexOf(currentTouches, currentTouch)] = 0;
-                    break;
+                        case TouchPhase.Stationary:
+                            swipeSpeeds[Id] = 0;
+                            break;
 
-                    case TouchPhase.Ended:
-                    startPoses[Array.IndexOf(currentTouches, currentTouch)] = Vector2.zero;
-                    currentPoses[Array.IndexOf(currentTouches, currentTouch)] = Vector2.zero;
-                    swipeSpeeds[Array.IndexOf(currentTouches, currentTouch)] = 0;
-                    break;
+                        case TouchPhase.Ended:
+                            startPoses[Id] = Vector2.zero;
+                            currentPoses[Id] = Vector2.zero;
+                            swipeSpeeds[Id] = 0;
+                            break;
+                    }
                 }
             }
         }

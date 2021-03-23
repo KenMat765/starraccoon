@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
     [RuntimeInitializeOnLoadMethod]
     static void GetTopScore()
     {
-        PlayerPrefs.GetInt("TopScore", 0);
+        topScore = PlayerPrefs.GetInt("TopScore", 0);
     }
 
     public void GameStarter()
